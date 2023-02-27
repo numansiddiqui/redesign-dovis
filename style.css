@@ -1,59 +1,60 @@
-*{
+* {
     padding: 0;
     margin: auto;
     box-sizing: border-box;
 }
 
-body{
+body {
     background: #000C22;
     color: #FFFFFF;
     font-family: 'Open Sans';
+    text-align: center;
 }
 
-.container{
+.container {
     max-width: 1100px;
 }
 
-h1{
+h1 {
     font-size: 48px;
     font-weight: bold;
 }
 
-h4{
+h4 {
     font-size: 28px;
     font-weight: bold;
 }
 
-a{
+a {
     font-size: 20px;
     padding: 10px;
 }
 
-li{
+li {
     text-decoration: none;
     margin-left: 20px;
     list-style: none;
 }
 
-.navbar{
+.navbar {
     display: flex;
     align-items: center;
     justify-content: stretch;
     padding: 20px;
 }
 
-ul{
+ul {
     display: flex;
     align-items: center;
 }
 
-.register-btn{
+.register-btn {
     padding: 10px;
     background: #2C4572;
     border-radius: 8px;
 }
 
-.hero-content{
+.hero-content {
     margin: 30px;
     display: flex;
     flex-direction: column;
@@ -62,33 +63,33 @@ ul{
     text-align: center;
 }
 
-span{   
-    background: linear-gradient(135deg,#FD7474,#053999);
+span {
+    background: linear-gradient(135deg, #FD7474, #053999);
     -webkit-background-clip: text;
     color: transparent;
     font-weight: bold;
     font-size: 54px;
 }
 
-.link-shortner{
+.link-shortner {
     width: 700px;
     padding: 10px;
     font-size: 22px;
-    background: rgba(24,36,57,71%);
+    background: rgba(24, 36, 57, 71%);
     border: solid 1px white;
     border-radius: 8px;
     margin: 30px;
 }
 
-.main-cta{
+.main-cta {
     padding: 10px 20px;
     font-size: 22px;
     background: #2C4572;
     border-radius: 8px;
-    color:white
+    color: white
 }
 
-.Signup-content{
+.Signup-content {
     margin: 30px;
     margin-top: 110px;
     display: flex;
@@ -100,41 +101,120 @@ span{
     padding: 20px 10px;
 }
 
-.signup-form{
+.signup-form {
     display: flex;
 }
 
-input{
+input {
     width: 350px;
     padding: 5px;
     font-size: 18px;
-    background: rgba(24,36,57,71%);
+    background: rgba(24, 36, 57, 71%);
     border: solid 0.25px white;
     border-radius: 8px 0px 0px 8px;
     margin: 0px;
 }
 
-button{
+button {
     padding: 10px 20px;
     font-size: 22px;
     background: #2C4572;
     border: none;
     border-radius: 0px 8px 8px 0px;
-    color:white
+    color: white
 }
 
-footer{
+footer {
     background-color: black;
     text-align: center;
     display: flex;
     padding: 10px;
 }
 
-footer li{
-   font-size: 20px;
-   padding: 0px;
+footer li {
+    font-size: 20px;
+    padding: 0px;
 }
 
-.footer-content{
+.footer-content {
     padding: 50px 100px;
+}
+
+
+@media screen and (max-width: 480px) {
+
+    h1 {
+        font-size: 24px;
+    }
+
+    h4 {
+        font-size: 18px;
+        font-weight: bold;
+    }
+
+    a {
+        font-size: 16px;
+        padding: 10px;
+    }
+
+    li {
+        margin-left: 16px;
+    }
+
+    span {
+        font-size: 28px;
+    }
+    .navbar {
+       flex-direction: column;
+    }
+    input {
+        font-size: 16px;
+    }
+
+    .link-shortner {
+        width: 320px;
+    }
+    .main-cta{
+        margin: 5px;
+    }
+    .Signup-content {
+        flex-direction: column;
+        margin-top: 90px;
+        padding: 10px;
+    }
+    
+    .signup-form {
+       flex-direction: column;
+       margin: 10px;
+    }
+    
+    input {
+        width:250px;
+        font-size: 16px;
+        border-radius: 8px;
+    }
+    
+    button {
+        padding: 10px;
+        font-size: 16px;
+        margin-top: 10px;
+        border-radius: 8px;
+    }
+
+    footer ul{
+        flex-direction: column;
+        padding: 10px;
+    }
+    
+    footer li{
+        font-size: 20px;
+        padding: 10px; 
+        margin: 0;
+    }
+    
+    .footer-content {
+        text-align:center;
+        padding: 20px 40px;
+    }
+
 }
