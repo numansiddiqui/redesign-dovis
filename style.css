@@ -176,6 +176,7 @@ footer li {
     }
     .main-cta{
         margin: 5px;
+        font-size:18px;
     }
     .Signup-content {
         flex-direction: column;
